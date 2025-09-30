@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    /*
+        top = cima
+        bottom = baixo
+        left = esquerda
+        right = direita
+    */
+}
+
+.conteudo {
+    width: 100%;
+    /* largura */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto {
+    width: 600px;
+}
+
+h1 {
+    color: #333;
+    font-size: 60px;
+    /* TAMANHO DA FONTE*/
+    font-weight: 600;
+    /* GROSSURA DA FONTE */
+
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background: #017143;
+    /* COR DE FUNDO*/
+    color: #fff;
+    border-radius: 40px;
+    /* ARREDONDAMENTO DAS BORDAS*/
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    /* MUDA O PONTEIRO DO MOUSE*/
+    transition: 0.5s;
+    /* TRANSIÇAO DE EFEITO*/
+}
+
+button:hover {
+    /* EFEITO DE MOUSE*/
+    background: #018950;
+}
+
+.imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 185px;
+}
+
+.copao {
+    width: 340px;
+    /* largura da imagem */
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.botao_menu {
+    width: 80px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 1s;
+}
+
+.botao_menu:hover {
+    transform: translateY(-25px);
+}
+
+.circulo {
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(500px at right 800px);
+    /* fazer o corte do circulo (600px= tamanho e 800px= é a posição do lado direito*/
+    z-index: -1;
+}
